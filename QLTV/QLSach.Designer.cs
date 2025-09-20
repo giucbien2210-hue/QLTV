@@ -294,6 +294,7 @@
             // 
             // QLSach
             // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleDimensions = new SizeF(10F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(groupBox1);
@@ -321,6 +322,7 @@
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4, 3, 4, 3);
             Name = "QLSach";
+            Size = new Size(994, 502);
             Size = new Size(1105, 773);
             Load += QLSach_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

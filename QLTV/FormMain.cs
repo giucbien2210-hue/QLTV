@@ -38,11 +38,12 @@ namespace QLTV
             uc.Dock = DockStyle.Fill;
             panelMain.Controls.Add(uc);
 
+            QLSach
         }
 
         private void qlSach1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

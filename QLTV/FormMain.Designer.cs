@@ -41,6 +41,7 @@
             gioithieuToolStripMenuItem = new ToolStripMenuItem();
             dangxuatToolStripMenuItem = new ToolStripMenuItem();
             panelMain = new Panel();
+            qlSach1 = new QLSach();
             menuStrip2.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             menuStrip2.Location = new Point(0, 0);
             menuStrip2.Name = "menuStrip2";
             menuStrip2.Size = new Size(982, 28);
+            menuStrip2.Size = new Size(800, 28);
             menuStrip2.TabIndex = 1;
             menuStrip2.Text = "menuStrip2";
             // 
@@ -60,6 +62,7 @@
             // 
             QLSachToolStripMenuItem.Name = "QLSachToolStripMenuItem";
             QLSachToolStripMenuItem.Size = new Size(115, 24);
+            QLSachToolStripMenuItem.Size = new Size(110, 24);
             QLSachToolStripMenuItem.Text = "Quản Lý Sách";
             QLSachToolStripMenuItem.Click += QLSachToolStripMenuItem_Click;
             // 
@@ -74,6 +77,7 @@
             // 
             muontraToolStripMenuItem.Name = "muontraToolStripMenuItem";
             muontraToolStripMenuItem.Size = new Size(93, 24);
+            muontraToolStripMenuItem.Size = new Size(90, 24);
             muontraToolStripMenuItem.Text = "Mượn Trả ";
             muontraToolStripMenuItem.Click += muontraToolStripMenuItem_Click;
             // 
@@ -81,6 +85,7 @@
             // 
             baocaothongkeToolStripMenuItem.Name = "baocaothongkeToolStripMenuItem";
             baocaothongkeToolStripMenuItem.Size = new Size(148, 24);
+            baocaothongkeToolStripMenuItem.Size = new Size(146, 24);
             baocaothongkeToolStripMenuItem.Text = "Báo Cáo Thống Kê";
             baocaothongkeToolStripMenuItem.Click += baocaothongkeToolStripMenuItem_Click;
             // 
@@ -89,6 +94,7 @@
             gioithieuToolStripMenuItem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             gioithieuToolStripMenuItem.Name = "gioithieuToolStripMenuItem";
             gioithieuToolStripMenuItem.Size = new Size(92, 24);
+            gioithieuToolStripMenuItem.Size = new Size(90, 24);
             gioithieuToolStripMenuItem.Text = "Giới Thiệu";
             gioithieuToolStripMenuItem.TextImageRelation = TextImageRelation.TextBeforeImage;
             gioithieuToolStripMenuItem.Click += gioithieuToolStripMenuItem_Click;
@@ -98,10 +104,12 @@
             dangxuatToolStripMenuItem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dangxuatToolStripMenuItem.Name = "dangxuatToolStripMenuItem";
             dangxuatToolStripMenuItem.Size = new Size(95, 24);
+            dangxuatToolStripMenuItem.Size = new Size(93, 24);
             dangxuatToolStripMenuItem.Text = "Đăng Xuất";
             dangxuatToolStripMenuItem.Click += dangxuatToolStripMenuItem_Click_1;
             // 
             // panelMain
+            // qlSach1
             // 
             panelMain.BackColor = Color.White;
             panelMain.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
@@ -110,6 +118,11 @@
             panelMain.Size = new Size(982, 773);
             panelMain.TabIndex = 2;
             panelMain.Paint += panel1_Paint;
+            qlSach1.Location = new Point(0, 31);
+            qlSach1.Name = "qlSach1";
+            qlSach1.Size = new Size(800, 419);
+            qlSach1.TabIndex = 2;
+            qlSach1.Load += qlSach1_Load;
             // 
             // FormMain
             // 
@@ -118,6 +131,8 @@
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(982, 802);
             Controls.Add(panelMain);
+            ClientSize = new Size(800, 450);
+            Controls.Add(qlSach1);
             Controls.Add(menuStrip2);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
@@ -140,5 +155,6 @@
         private ToolStripMenuItem gioithieuToolStripMenuItem;
         private ToolStripMenuItem dangxuatToolStripMenuItem;
         private Panel panelMain;
+        private QLSach qlSach1;
     }
 }
